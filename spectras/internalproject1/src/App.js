@@ -3,7 +3,7 @@ import { useState } from "react";
 import Navigation from "./Navigation/Nav";
 import Products from "./Products/Products";
 import products from "./db/data";
-import Recommend from "./Recommended/Recommend";
+// import Recommend from "./Recommended/Recommend";
 import Sidebar from "./Sidebar/Sidebar";
 import Card from "./components/Card";
 import "./index.css";
@@ -27,10 +27,10 @@ function App() {
     setSelectedCategory(event.target.value);
   };
 
-  // ------------ Button Filtering -----------
-  const handleClick = (event) => {
-    setSelectedCategory(event.target.value);
-  };
+  // // ------------ Button Filtering -----------
+  // const handleClick = (event) => {
+  //   setSelectedCategory(event.target.value);
+  // };
 
   function filteredData(products, selected, query) {
     let filteredProducts = products;
@@ -73,7 +73,7 @@ function App() {
     <>
       <Sidebar handleChange={handleChange} />
       <Navigation query={query} handleInputChange={handleInputChange} />
-      <Recommend handleClick={handleClick} />
+      {/* <Recommend handleClick={handleClick} /> */}
       <Products result={result} />
     </>
   );

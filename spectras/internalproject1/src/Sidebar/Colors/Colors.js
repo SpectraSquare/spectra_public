@@ -35,10 +35,10 @@ const Colors = ({ handleChange }) => {
 
         <Input
           handleChange={handleChange}
-          value="red"
-          title="Red"
+          value="gold"
+          title="gold"
           name="test1"
-          color="red"
+          color="gold"
         />
 
         <Input
@@ -54,14 +54,14 @@ const Colors = ({ handleChange }) => {
             className="absolute opacity-0 cursor-pointer"
             onChange={handleChange}
             type="radio"
-            value="white"
+            value="silver"
             name="test1"
           />
           <span
             className="absolute h-5 w-5 bg-[#eee] rounded-[50%] left-0 top-0"
             style={{ background: "white", border: "2px solid black" }}
           ></span>
-          White
+          Silver
         </label>
       </div>
     </>
