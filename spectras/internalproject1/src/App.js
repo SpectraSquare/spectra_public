@@ -7,6 +7,8 @@ import products from "./db/data";
 import Sidebar from "./Sidebar/Sidebar";
 import Card from "./components/Card";
 import "./index.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ProductDetailPage from "./components/ProductDetailPage";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -71,6 +73,14 @@ function App() {
 
   return (
     <>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/ProductDetailPage"
+            element={<ProductDetailPage />}
+          ></Route>
+        </Routes>
+      </BrowserRouter>
       <Sidebar handleChange={handleChange} />
       <Navigation query={query} handleInputChange={handleInputChange} />
       {/* <Recommend handleClick={handleClick} /> */}

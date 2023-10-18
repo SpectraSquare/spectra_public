@@ -74,7 +74,7 @@ function App() {
     );
   }
 
-  const result = filteredData(products, selectedCategory, query)
+  // const result = filteredData(products, selectedCategory, query)
   return (
     // <div>
     //   <BrowserRouter>

@@ -22,7 +22,7 @@ const Card = ({ img, title, star, reviews, prevPrice, newPrice }) => {
             </div>
           </section>
         </div>
-      </section>
+      </section> 
     </>
   );
 };
